@@ -11,6 +11,9 @@ Please note:
 
 toc::[]
 
+
+TIP: you can preview this README in VSCode using the **AsciiDoctor** VSCode extension and click the preview button on the top right of the VSCode window once the extension is installed image:vscode-asciidoc-preview.png[inline]. The extension is automatically recommended when you open the project in VSCode.
+
 == Getting Started
 
 1. **Accept the Assignment**: 
@@ -105,7 +108,10 @@ $ git push origin main
 
 To ensure your CV is correctly formatted, you can compile the LaTeX file into a PDF. VSCode has LaTeX plugins, such as **LaTeX Workshop**, that can compile the document directly.
 
+
 https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop[> Install **LaTeX Workshop**] from the VSCode extension marketplace and then compile the `main.tex` file by opening the Command Palette (btn:[Ctrl+Shift+P] or btn:[Cmd+Shift+P] on macOS) and typing `LaTeX Workshop: Build LaTeX project`.
+
+TIP: **LaTeX Workshop** is a VSCode extension will be automatically recommended for installation when you open the project in VSCode.
 
 Alternatively, compile it using the terminal:
 
