@@ -2,6 +2,7 @@
     "recommendations": [
         "james-yu.latex-workshop",
         "tecosaur.latex-utilities",
-        "asciidoctor.asciidoctor-vscode"
+        "asciidoctor.asciidoctor-vscode",
+        "github.copilot"
     ]
 }

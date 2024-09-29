@@ -5,9 +5,11 @@ This assignment will guide you through creating your own CV using LaTeX and GitH
 
 Please note:
 
-- You must use **VSCode** for this assignment.
+- You must use **VSCode** or https://code.visualstudio.com/docs/remote/codespaces[**CodeSpaces**] (for this assignment.
 - Commit regularly and push changes to GitHub frequently.
 - You **must** replace the provided photo with your own.
+
+NOTE: **CodeSpaces** is a cloud-based development environment based on VSCode that allows you to develop entirely in the cloud via your browser. It provides a full-featured development environment that can be accessed from anywhere. If you prefer to use CodeSpaces, you can open the repository in CodeSpaces by clicking the `CodeSpaces` button on the repository page. The advantage of using CodeSpaces is that you don't need to install any software on your local machine.
 
 toc::[]
 
