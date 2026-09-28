@@ -1,4 +1,4 @@
-= GitHub Classroom Assignment: Create Your CV
+= M1 CSMI Git and GitHub project: Create your CV
 :experimental: true
 :icons: font
 
@@ -15,21 +15,22 @@ TIP: You can preview this README in VS Code using the *AsciiDoctor* extension (a
 
 == What you will learn
 * Core Git workflow: clone, branch, commit, push, pull request, merge.
-* Working with **GitHub Classroom** assignments.
+* Working with a personal GitHub repository created from a template.
 * Editing and compiling LaTeX in **VS Code** (via *LaTeX Workshop*).
 * Packaging deliverables using **GitHub Releases**.
 
 == Requirements
-* GitHub account and the **Classroom invitation link** (provided by your instructor).
+* GitHub account and the repository transfer invitation from your instructor.
 * **VS Code** locally _or_ **GitHub Codespaces**.
-* Replace the sample photo with **your own** (mandatory).
+* Replace the sample content and image. A personal photo is optional.
 * Commit frequently with **meaningful messages**.
 
 == Getting Started
 
-1. **Accept the assignment**
-   * Open the Classroom invitation link and click btn:[Accept this assignment].
-   * A private repository will be created for you.
+1. **Accept your repository**
+   * Your instructor creates a private repository named `m1-2026-cv-<your-github-username>` from this template and requests a transfer to your GitHub account.
+   * Accept the GitHub repository transfer invitation within 24 hours. The repository then appears under your own account. Contact your instructor if the invitation expires.
+   * Keep the repository private while it contains personal information. If you want feedback from the instructor after the transfer, invite their GitHub account as a collaborator.
 
 2. **Open your repository**
    * **Option A — Codespaces (recommended):**
@@ -39,19 +40,19 @@ TIP: You can preview this README in VS Code using the *AsciiDoctor* extension (a
 +
 [source,console]
 ----
-git clone https://github.com/<your-username>/<repository-name>.git
-code <repository-name>
+git clone https://github.com/<your-username>/m1-2026-cv-<your-username>.git
+code m1-2026-cv-<your-username>
 ----
 
 == Repository tour
 You should see at least:
 * `main.tex` — main LaTeX source for your CV.
 * `simplehipstercv.cls`, `simplehipstercv.sty` — class/style files.
-* Images (e.g., `jack.jpg`) — replace with your own portrait.
+* Images (e.g., `jack.jpg`) — replace the sample image with an image you may use, or remove the portrait.
 
 [IMPORTANT]
 ====
-**Photo:** Replace `jack.jpg` with your own photo **or** update the LaTeX path if you change the filename.
+**Image:** The sample CV uses `jack.jpg`. Replace it with an image you have permission to use, or remove the `\roundpic{jack.jpg}` line from `main.tex`. A personal photo is not required.
 ====
 
 == Edit your CV (LaTeX)
@@ -61,11 +62,11 @@ You should see at least:
    * Skills & Programming Languages
    * Experience / Projects
    * Languages & Certifications
-2. Replace the profile photo:
+2. If using a profile image, update the image path in `main.tex`:
 +
 [source,latex]
 ----
-\includegraphics[width=1.1\linewidth]{jack.jpg} % rename or update path if needed
+\roundpic{your-image.jpg}
 ----
 
 == Preview / Build the PDF
@@ -136,7 +137,7 @@ Submit the **Release URL** in the LMS (or as instructed).
 == Good practice
 * Keep your CV to **1–2 pages**; prioritize impact and recency.
 * Use action verbs and metrics (e.g., “Implemented…, reduced runtime by 35% on EuroHPC”).
-* Avoid sensitive personal data. Ensure the photo is your own and that you have rights to any included assets.
+* Avoid sensitive personal data. Check that you have rights to any image or other asset you use. Keep the repository private unless you deliberately choose to publish your CV.
 
 == Resources
 * GitHub Docs — https://docs.github.com
