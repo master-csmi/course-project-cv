@@ -15,22 +15,22 @@ TIP: You can preview this README in VS Code using the *AsciiDoctor* extension (a
 
 == What you will learn
 * Core Git workflow: clone, branch, commit, push, pull request, merge.
-* Working with a personal GitHub repository created from a template.
+* Working with a GitHub repository created from a template.
 * Editing and compiling LaTeX in **VS Code** (via *LaTeX Workshop*).
 * Packaging deliverables using **GitHub Releases**.
 
 == Requirements
-* GitHub account and the repository transfer invitation from your instructor.
+* GitHub account and write access to your assignment repository in `master-csmi`.
 * **VS Code** locally _or_ **GitHub Codespaces**.
 * Replace the sample content and image. A personal photo is optional.
 * Commit frequently with **meaningful messages**.
 
 == Getting Started
 
-1. **Accept your repository**
-   * Your instructor creates a private repository named `m1-2026-cv-<your-github-username>` from this template and requests a transfer to your GitHub account.
-   * Accept the GitHub repository transfer invitation within 24 hours. The repository then appears under your own account. Contact your instructor if the invitation expires.
-   * Keep the repository private while it contains personal information. If you want feedback from the instructor after the transfer, invite their GitHub account as a collaborator.
+1. **Open your assignment repository**
+   * Your instructor creates a private repository named `m1-2026-cv-<your-github-username>` under `master-csmi` and grants you write access.
+   * Open the repository at `https://github.com/master-csmi/m1-2026-cv-<your-github-username>`. If GitHub asks you to accept a repository invitation, accept it first.
+   * Keep the repository private while it contains personal information.
 
 2. **Open your repository**
    * **Option A — Codespaces (recommended):**
@@ -40,7 +40,7 @@ TIP: You can preview this README in VS Code using the *AsciiDoctor* extension (a
 +
 [source,console]
 ----
-git clone https://github.com/<your-username>/m1-2026-cv-<your-username>.git
+git clone https://github.com/master-csmi/m1-2026-cv-<your-username>.git
 code m1-2026-cv-<your-username>
 ----
 
