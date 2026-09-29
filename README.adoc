@@ -23,7 +23,7 @@ TIP: You can preview this README in VS Code using the *AsciiDoctor* extension (a
 * GitHub account and write access to your assignment repository in `master-csmi`.
 * **VS Code** locally _or_ **GitHub Codespaces**.
 * Replace the sample content and image. A personal photo is optional.
-* Commit frequently with **meaningful messages**.
+* Commit frequently with **meaningful messages** on a feature branch.
 
 == Getting Started
 
@@ -84,14 +84,19 @@ pdflatex main.tex
 If building **locally**, ensure a LaTeX distribution is installed (e.g., TeX Live/MiKTeX). With **Codespaces**, the environment can be preconfigured by your instructor or you can install what you need inside the container.
 ====
 
-== Git workflow to demonstrate
-1. Create a short-lived feature branch:
+== Contribute through a pull request
+
+The `main` branch is protected. You cannot push commits directly to it. Create a branch for each focused change, push that branch, then open and merge a pull request into `main`. The same workflow applies in a local terminal and in Codespaces.
+
+1. Start from the latest `main` and create a short-lived feature branch:
 +
 [source,console]
 ----
-git checkout -b feature/fill-education
+git switch main
+git pull --ff-only origin main
+git switch -c feature/fill-education
 ----
-2. Make small, focused commits with clear messages:
+2. Edit `main.tex` (or another relevant file), build the PDF, and make focused commits:
 +
 [source,console]
 ----
@@ -99,8 +104,16 @@ git add main.tex
 git commit -m "Add education section with MSc details"
 git push -u origin feature/fill-education
 ----
-3. Open a **Pull Request** on GitHub → review (self/peer) → **Merge** into `main`.
-4. Repeat once more for another part (e.g., experience or skills).
+3. On GitHub, open your repository, select btn:[Compare & pull request] for your branch, and set `main` as the base branch. Give the pull request a clear title and summary. Review the changed files, then merge the pull request.
+4. Update your local `main` after merging:
++
+[source,console]
+----
+git switch main
+git pull --ff-only origin main
+git branch -d feature/fill-education
+----
+5. Repeat with a new branch for another part of the CV, such as experience or skills. A direct push to `main` will be rejected.
 
 [IMPORTANT]
 ====
@@ -122,7 +135,7 @@ Submit the **Release URL** in the LMS (or as instructed).
 
 == Grading checklist (100 pts)
 
-* Git hygiene (30 pts): ≥6 meaningful commits; clear messages; one small PR merged.
+* Git hygiene (30 pts): ≥6 meaningful commits on feature branches; clear messages; at least one PR merged into `main`.
 * Repository quality (20 pts): clean tree; sensible `.gitignore`; no huge binaries in history.
 * CV content & structure (30 pts): complete, concise sections; consistent formatting.
 * Release packaging (20 pts): `v1.0` release with `main.pdf` attached.
